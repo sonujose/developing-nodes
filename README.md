@@ -1,4 +1,4 @@
-# AngularJS Nodejs full-stack Kit
+# DevelopingNodes
 **(Webpack, ES2015, Express, Sass, Babel)**  
 
 It is a full stack project for AngularJS web application which objects is:
@@ -16,7 +16,7 @@ It is a full stack project for AngularJS web application which objects is:
 
 1) Create a new folder for your project, and clone this repo inside it
 ```
-git clone https://github.com/sonujose/Angular-Node-Fullstack.git
+git clone https://github.com/sonujose/DevelopingNodes.git
 ```
 2) You need to have node and npm installed on your system, `npm version should be grater than 3.x` [2.x version may create issues in loading some dependencies]
    To update npm version run `npm install npm@latest -g`
@@ -33,12 +33,12 @@ npm install
 ```
 npm test
 ```
-6) Run the application (Webpack-dev-server) [open another terminal]
+6) Run the application (webpack --watch)
 ```
 npm start
 ```
 7) Wait untill webpack bundles all your files and server, Browser will open `http://localhost:8080`, 
-[Your api server will be running at localhost:9000, webpack-dev-server will autimatically navigate to server on /api/ calls, you dont need to worry]
+
 
 8) Congratulations, you've just setup your Angular Node fullstack application!
 
