@@ -6,7 +6,7 @@
     "test": "node server/server.js",
     "start": "webpack --watch"
   },
-  "author": "Sonu Jose",
+  "author": "sonujose",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.3.15",
