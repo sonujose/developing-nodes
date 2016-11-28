@@ -31,11 +31,11 @@ npm install
 ```
 5) Run the api server 
 ```
-npm test
+npm start
 ```
 6) Run the application (webpack --watch)
 ```
-npm start
+npm test
 ```
 7) Wait untill webpack bundles all your files and server, Browser will open `http://localhost:8080`, 
 

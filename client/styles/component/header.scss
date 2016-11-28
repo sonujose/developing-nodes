@@ -3,27 +3,43 @@
     width: 100%;
     border: none;
     height: 3rem;
-    position: absolute;
+    position: fixed;
+    padding-top: 12px;
 
     .navbar-brand {
         display: flex;
+        height: 3.5rem;
+        padding: 8px;
+        cursor: pointer;
     }
-    
+    .navbar-nav {
+        float: right;
+    }
     .navbar-nav-link {
         text-decoration: none;
+        color: #ae0001;
+        padding-bottom: 3px;
+        &:hover {
+            border-bottom: 1.5px solid #ae0001;
+        }
+        &:focus {
+            border-bottom: 1.5px solid #ae0001;
+        }
     }
 
     .logo-container {
         text-decoration: none;
     }
-    
+    .logo-icon {
+        height: 30px;
+        width: 30px;
+    }
     .master-title {
         margin-left: 7px;
         display: inline-block;
         text-decoration: none;
-        color: #F2671D;
-        &:hover {
-            color:#F2671D;
-        }
+        color: #e4e4e4;
+        vertical-align: middle;
+        font-size: 2rem;
     }
 }

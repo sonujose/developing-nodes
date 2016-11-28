@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Angular nodejs fullstack",
   "scripts": {
-    "test": "node server/server.js",
-    "start": "webpack --watch"
+    "start": "node server/server.js",
+    "test": "webpack --watch"
   },
   "author": "sonujose",
   "license": "MIT",
