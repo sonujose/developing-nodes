@@ -7,7 +7,7 @@ module.exports = {
     devtool: 'source-map',
     debug: true,
     entry: {
-        'vendor': ['angular', 'angular-ui-router', './node_modules/bootstrap/dist/js/bootstrap.js'],
+        'vendor': ['angular', 'angular-ui-router'],
         'app': ['./client/app/app.js']
     },
     resolve: {
