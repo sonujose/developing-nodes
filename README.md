@@ -7,7 +7,6 @@ It is a full stack project for AngularJS web application which objects is:
 - Mockup server for your application;
 - Supports ES2015 using Babel 
 - Supports SASS for styling you application
-- Give the basic folders and modules structure of angular application;
 
 ## Future Updates (Working on it)
 - Integrate MongoDB
@@ -29,18 +28,18 @@ npm install --global webpack
 ```
 npm install
 ```
-5) Run the api server 
+5) Run the server (Both static files and api server)
 ```
 npm start
 ```
-6) Run the application (webpack --watch)
+6) Build the application (webpack --watch)
 ```
 npm test
 ```
+
 7) Wait untill webpack bundles all your files and server, App will open at `http://localhost:8080`
 
-
-8) Congratulations your app is running, Enjoy
+8) Congratulations!!! Your app is running.
 
 #### Using webpack
 Here webpack is used for bundling the js files. `webpack.config.js` file bundles the entire js files into two modules app and vendor and are minified and used as reference in `index.html`.
@@ -60,6 +59,6 @@ http://webpack.github.io/analyse/#modules
 ```
 3) upload stats.json file from your repository
 
-## Have FuN
+## Have FUN!!
 
 
