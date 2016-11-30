@@ -37,10 +37,10 @@ npm start
 ```
 npm test
 ```
-7) Wait untill webpack bundles all your files and server, Browser will open `http://localhost:8080`, 
+7) Wait untill webpack bundles all your files and server, App will open at `http://localhost:8080`
 
 
-8) Congratulations
+8) Congratulations your app is running, Enjoy
 
 #### Using webpack
 Here webpack is used for bundling the js files. `webpack.config.js` file bundles the entire js files into two modules app and vendor and are minified and used as reference in `index.html`.
