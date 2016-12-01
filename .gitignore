@@ -1,4 +1,6 @@
 node_modules
-app/webpack-build/*.*
+app/webpack-build/*.js
+app/webpack-build/*.map
+app/webpack-build/*.css
 npm-debug.log
 stats.json
