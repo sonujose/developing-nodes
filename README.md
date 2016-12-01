@@ -9,7 +9,6 @@ It is a full stack project for AngularJS web application which objects is:
 - Supports SASS for styling you application
 
 ## Future Updates (Working on it)
-- Integrate MongoDB
 - Using Firebase
 
 ## Installation
