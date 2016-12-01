@@ -2,9 +2,9 @@
     background: transparent;
     width: 100%;
     border: none;
-    height: 3rem;
-    position: fixed;
     padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 0;
 
     .navbar-brand {
         display: flex;
@@ -19,6 +19,7 @@
         text-decoration: none;
         color: #ae0001;
         padding-bottom: 3px;
+        border-bottom: 1.5px solid transparent;
         &:hover {
             border-bottom: 1.5px solid #ae0001;
         }
@@ -38,7 +39,7 @@
         margin-left: 7px;
         display: inline-block;
         text-decoration: none;
-        color: #e4e4e4;
+        color: #ae0001;
         vertical-align: middle;
         font-size: 2rem;
     }
