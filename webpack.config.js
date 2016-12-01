@@ -7,7 +7,7 @@ module.exports = {
     devtool: 'source-map',
     debug: true,
     entry: {
-        'vendor': ['angular', 'angular-ui-router'],
+        'vendor': ['angular', 'angular-ui-router', 'jquery', './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'],
         'app': ['./app/app.js']
     },
     resolve: {
@@ -48,11 +48,11 @@ module.exports = {
         new OpenBrowserPlugin(),
         //new webpack.HotModuleReplacementPlugin()
         new ExtractTextPlugin("styles.bundle.css"),
-        /*new webpack.ProvidePlugin({
+        new webpack.ProvidePlugin({
             '$': 'jquery',
             'jQuery': 'jquery',
             'window.jQuery': 'jquery'
-        })*/
+        })
     ],
     // configures webpack-dev-server
     devServer: {
