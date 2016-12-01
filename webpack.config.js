@@ -14,7 +14,7 @@ module.exports = {
         extensions: ['', '.ts', '.js']
     },
     output: {
-        path: './app/webpack-build',
+        path: './app/dist',
         filename: '[name].bundle.js',
         chunkFilename: '[name]_[chunkhash].js',
         //hotUpdateChunkFilename: 'hot/[name].hot-update.js',
