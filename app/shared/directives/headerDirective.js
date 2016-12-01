@@ -3,7 +3,7 @@
 function appHeaderDirective() {
     return {
         restrict: 'E',
-        templateUrl: 'client/app/shared/templates/headerTemplate.html',
+        templateUrl: 'app/shared/templates/headerTemplate.html',
         replace: true
       };
 }

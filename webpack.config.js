@@ -8,13 +8,13 @@ module.exports = {
     debug: true,
     entry: {
         'vendor': ['angular', 'angular-ui-router'],
-        'app': ['./client/app/app.js']
+        'app': ['./app/app.js']
     },
     resolve: {
         extensions: ['', '.ts', '.js']
     },
     output: {
-        path: './client/build',
+        path: './app/webpack-build',
         filename: '[name].bundle.js',
         chunkFilename: '[name]_[chunkhash].js',
         //hotUpdateChunkFilename: 'hot/[name].hot-update.js',
@@ -25,7 +25,7 @@ module.exports = {
             { test: /\.js$/, loader: 'source-map-loader' }
         ],
         loaders: [ 
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader", include: path.join(__dirname, 'client/app') },
+            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader", include: path.join(__dirname, 'app') },
             { test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [/\.(spec|e2e)\.ts$/] },
             { test: /\.(html)$/, loader: 'raw-loader' },
             //{ test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' },
@@ -48,11 +48,11 @@ module.exports = {
         new OpenBrowserPlugin(),
         //new webpack.HotModuleReplacementPlugin()
         new ExtractTextPlugin("styles.bundle.css"),
-        new webpack.ProvidePlugin({
+        /*new webpack.ProvidePlugin({
             '$': 'jquery',
             'jQuery': 'jquery',
             'window.jQuery': 'jquery'
-        })
+        })*/
     ],
     // configures webpack-dev-server
     devServer: {
