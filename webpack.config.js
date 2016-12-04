@@ -25,8 +25,8 @@ module.exports = {
             { test: /\.js$/, loader: 'source-map-loader' }
         ],
         loaders: [ 
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader", include: path.join(__dirname, 'app') },
-            { test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [/\.(spec|e2e)\.ts$/] },
+            //{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader", include: path.join(__dirname, 'app') },
+            //{ test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [/\.(spec|e2e)\.ts$/] },
             { test: /\.(html)$/, loader: 'raw-loader' },
             //{ test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract("css-loader!sass-loader")},
