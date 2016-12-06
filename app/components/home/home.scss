@@ -1,20 +1,54 @@
-.home-container {
-    padding: 1px;
-}
 .hero-banner {
     width: 100%;
-    background: #6BB120;
-    height: 260px;
+    .hero-image {
+        width: 100%;
+    }
     &-content {
         color: #fff;
-        padding-top: 90px;
-        width: 80%;
+        width: 100%;
+        top: 2rem;
+        padding-top: 12rem;
+        text-align: center;
+        background: #005A6F;
+        height: 43rem;
         .title {
-            font-size: 35px;  
+            font-size: 45px;  
         }
         .subtitle {
-            font-size: 20px;
+            font-size: 15px;
             padding: 1rem 0;
+            margin-bottom: 3rem;
+            color: #c4c4c4;
+        }
+        .search-input {
+            display: block;
+            margin: auto;
+            margin-bottom: 3rem;
+            padding: 10px;
+            width: 504px;
+            background: transparent;
+            border-bottom: 1px solid #fff;
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+            font-size: 4rem;
+            outline: none !important;
+        }
+        .primary-btn {
+            border: 1.5px solid #fff;
+            height: 40px;
+            width: 170px;
+            padding: 10px;
+            background: #ccc;
+            text-align: center;
+            cursor: pointer;
+            margin: auto;
+            color: #005A6F;
+            border-radius: 20px;
+            text-decoration: none;
+            &:hover {
+                background: #fff;
+            }
         }
     }   
 }
