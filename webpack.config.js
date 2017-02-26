@@ -48,11 +48,11 @@ module.exports = {
         new OpenBrowserPlugin(),
         //new webpack.HotModuleReplacementPlugin()
         new ExtractTextPlugin("styles.bundle.css"),
-        new webpack.ProvidePlugin({
-            '$': 'jquery',
-            'jQuery': 'jquery',
-            'window.jQuery': 'jquery'
-        })
+        // new webpack.ProvidePlugin({
+        //     '$': 'jquery',
+        //     'jQuery': 'jquery',
+        //     'window.jQuery': 'jquery'
+        // })
     ],
     // configures webpack-dev-server
     devServer: {

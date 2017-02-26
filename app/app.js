@@ -8,7 +8,7 @@ var appModule = angular.module('App', ['App.components', 'App.shared', 'ui.route
 
 appModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/about');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
         .state('home', {
