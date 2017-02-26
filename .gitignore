@@ -4,3 +4,4 @@ app/dist/*.map
 app/dist/*.css
 npm-debug.log
 stats.json
+debug.log
