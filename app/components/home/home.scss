@@ -1,0 +1,25 @@
+//  Overriding dev-main styles
+
+.article-featured .container-full {
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2); 
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2); 
+    &:hover {
+        -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2); 
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2); 
+    }
+}
+
+.banner .banner__content {
+    background: #fff;
+}
+
+.banner {
+    height: 200px;
+}
+
+@media (min-width: 768px) {
+    .banner {
+        height: 200px;
+    }
+}

@@ -17,8 +17,6 @@ module.exports = {
         path: './app/dist',
         filename: '[name].bundle.js',
         chunkFilename: '[name]_[chunkhash].js',
-        //hotUpdateChunkFilename: 'hot/[name].hot-update.js',
-        //hotUpdateMainFilename: 'hot/[hash].hot-update.json'
     },
     module: {
         preLoaders: [
@@ -46,13 +44,12 @@ module.exports = {
             comments: false
         }),
         new OpenBrowserPlugin(),
-        //new webpack.HotModuleReplacementPlugin()
         new ExtractTextPlugin("styles.bundle.css"),
-        // new webpack.ProvidePlugin({
-        //     '$': 'jquery',
-        //     'jQuery': 'jquery',
-        //     'window.jQuery': 'jquery'
-        // })
+        new webpack.ProvidePlugin({
+          '$': 'jquery',
+           'jQuery': 'jquery',
+           'window.jQuery': 'jquery'
+        })
     ],
     // configures webpack-dev-server
     devServer: {

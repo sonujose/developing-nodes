@@ -6,10 +6,8 @@
 @import 'vendors/module';
 
 /* Generic application scss */
-@import 'config/module';
 @import 'component/module';
 
 /* Application scss */
 @import 'app/components/about/about';
 @import 'app/components/home/home';
-

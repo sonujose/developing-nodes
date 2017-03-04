@@ -1,5 +1,32 @@
-<header class="devop-header">
-  <div class="devop-brand" ui-sref="home">
-    <img class="logo-image" src="/app/shared/Assets/Logomaster_full.png">
-  </div>
-</header>
+<header class="header solid ng-scope" id="js-header" ng-class="{ 'header--open': navOpen == true, 'solid': solid == true,  'searchOpen': searchOpen == true }">
+            <a class="logo-container" href="/" target="_self"></a>
+            <nav class="nav" id="nav"><a href="#" class="navicon-button" id="navBtn" aria-label="Toggle Navigation" ng-click="toggleNav()"><span class="navicon"></span></a>
+                <a
+                    ng-click="toggleSearch($event)" href="#" class="mobile-search"><i class="material-icons">search</i></a>
+                    <ul class="menu" id="menu">
+                        <li><a href="/insights/" class="" target="_self">Insights</a></li>
+                        <li><a href="/showcase/" class="on" target="_self">Success Stories</a></li>
+                        <li><a href="/solutions/" class="" target="_self">Solutions</a></li>
+                        <li><a ng-click="toggleSearch($event)" href="#" class="search"><i class="material-icons">search</i></a></li>
+                        <li
+                            ng-click="toggleSubNav()"><a href="#contact-sales" id="js-open-sub-menu" class="block"><span>ABOUT US</span></a></li>
+                    </ul>
+                    <ul class="sub-menu" ng-class="{ 'sub-menu-is-open': subNavOpen == true }">
+                        <li class="sub-menu__item">
+                            <div class="sub-menu__desc">
+                                <p>Request more information about our digital marketing solutions.</p>
+                            </div>
+                            <div class="sub-menu__action"><a href="//services.google.com/fb/forms/digitalmarketingen/" class="btn btn-callout sub-menu__btn"
+                                    target="_blank">Digital Marketing sales</a></div>
+                        </li>
+                        <li class="sub-menu__item">
+                            <div class="sub-menu__desc">
+                                <p>Request more information about our revenue management solutions.</p>
+                            </div>
+                            <div class="sub-menu__action"><a href="/solutions/revenue-management/contact-sales/" class="btn btn-callout sub-menu__btn"
+                                    target="_blank" analytics-on="click" analytics-category="Conversion Initiated" analytics-event="Contact Sales"
+                                    analytics-label="Contact Sales - Header">Revenue Management sales</a></div>
+                        </li>
+                    </ul>
+            </nav>
+        </header>
