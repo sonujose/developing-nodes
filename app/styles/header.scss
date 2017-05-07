@@ -1,0 +1,36 @@
+.dn-header {
+    background:transparent;
+    position: absolute;
+    width: 100%;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    top: 0;
+    font-family: "Roboto Slab", Helvetica, serif;
+}
+
+.dn-header-nav {
+    padding: 0 30px;
+    height: 55px;
+    &-left {
+        float: left;
+    }
+    &-right {
+        float: right;
+    }
+}
+
+.master-title {
+    display: flex;
+    padding-top: 6px;
+    svg {
+        fill: #fff;
+        height: 45px;
+        width: auto;
+    }
+
+    &-name {
+        color: #fff;
+        font-size: 20px;
+        margin-top: 7px;
+        margin-left: 8px;
+    }
+}

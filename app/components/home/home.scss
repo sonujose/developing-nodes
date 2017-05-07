@@ -10,16 +10,45 @@
     }
 }
 
-.banner .banner__content {
-    background: #fff;
-}
-
-.banner {
-    height: 200px;
-}
-
-@media (min-width: 768px) {
-    .banner {
-        height: 200px;
+.banner-section {
+    background: radial-gradient(circle farthest-corner at right bottom,#fad037 0,#f9326c 100%);
+    height: 600px;
+    width: 100%;
+    font-family: "Roboto Slab", Helvetica, serif;
+    .cloud-container {
+        padding-top: 70px;
+        text-align: center;
+        .cloud-image-container:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            background-color: rgba(255,255,255,.4);
+            border-radius: 100%;
+            transform: translateZ(0);
+            mix-blend-mode: soft-light;
+        }
+        .cloud-image {
+            width: 100px;
+            height: auto;
+            margin-top: 25px;
+            
+        }
+        .cloud-image-container {
+            width: 150px;
+            margin: auto;
+            position: relative;
+            height: 150px;
+        }           
+    }
+    .dn-tag-container {
+        text-align: center;
+        .dn-tag-title {
+            color: #fff;
+            font-weight: 100;
+        }
     }
 }

@@ -1,32 +1,10 @@
-<header class="header solid ng-scope" id="js-header" ng-class="{ 'header--open': navOpen == true, 'solid': solid == true,  'searchOpen': searchOpen == true }">
-            <a class="logo-container" href="/" target="_self"></a>
-            <nav class="nav" id="nav"><a href="#" class="navicon-button" id="navBtn" aria-label="Toggle Navigation" ng-click="toggleNav()"><span class="navicon"></span></a>
-                <a
-                    ng-click="toggleSearch($event)" href="#" class="mobile-search"><i class="material-icons">search</i></a>
-                    <ul class="menu" id="menu">
-                        <li><a href="/insights/" class="" target="_self">Insights</a></li>
-                        <li><a href="/showcase/" class="on" target="_self">Success Stories</a></li>
-                        <li><a href="/solutions/" class="" target="_self">Solutions</a></li>
-                        <li><a ng-click="toggleSearch($event)" href="#" class="search"><i class="material-icons">search</i></a></li>
-                        <li
-                            ng-click="toggleSubNav()"><a href="#contact-sales" id="js-open-sub-menu" class="block"><span>ABOUT US</span></a></li>
-                    </ul>
-                    <ul class="sub-menu" ng-class="{ 'sub-menu-is-open': subNavOpen == true }">
-                        <li class="sub-menu__item">
-                            <div class="sub-menu__desc">
-                                <p>Request more information about our digital marketing solutions.</p>
-                            </div>
-                            <div class="sub-menu__action"><a href="//services.google.com/fb/forms/digitalmarketingen/" class="btn btn-callout sub-menu__btn"
-                                    target="_blank">Digital Marketing sales</a></div>
-                        </li>
-                        <li class="sub-menu__item">
-                            <div class="sub-menu__desc">
-                                <p>Request more information about our revenue management solutions.</p>
-                            </div>
-                            <div class="sub-menu__action"><a href="/solutions/revenue-management/contact-sales/" class="btn btn-callout sub-menu__btn"
-                                    target="_blank" analytics-on="click" analytics-category="Conversion Initiated" analytics-event="Contact Sales"
-                                    analytics-label="Contact Sales - Header">Revenue Management sales</a></div>
-                        </li>
-                    </ul>
-            </nav>
-        </header>
+<header class="dn-header" id="js-header">
+    <div class="dn-header-nav">
+        <div class="dn-header-nav-left">
+            <div class="master-title">
+                <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.628 8.006A7.535 7.535 0 0 0 12 4a7.502 7.502 0 0 0-7.427 6.511C2.12 10.32 0 12.296 0 14.75c0 2.177 1.19 3.219 2.188 3.709A5.59 5.59 0 0 0 4.489 19l14.575-.004c.05-.007 4.936-.698 4.936-5.496a5.498 5.498 0 0 0-5.372-5.494zM19 18H4.494l-.005.5V18C4.132 18 1 17.909 1 14.75a3.252 3.252 0 0 1 3.92-3.182.498.498 0 0 0 .6-.46A6.499 6.499 0 0 1 12 5a6.526 6.526 0 0 1 5.868 3.723c.086.18.273.299.471.285l.173-.003A4.497 4.497 0 0 1 23 13.5c0 3.912-3.899 4.482-4 4.5z"></path></svg>
+                <div class="master-title-name">DevelopingNodes</div>
+            </div>
+        </div>
+    </div>
+</header>

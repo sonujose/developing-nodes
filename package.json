@@ -1,7 +1,7 @@
 {
   "name": "angularwebpack",
   "version": "0.0.1",
-  "description": "Angular nodejs fullstack",
+  "description": "DN-Algos",
   "scripts": {
     "start": "node server/server.js",
     "test": "webpack --watch"

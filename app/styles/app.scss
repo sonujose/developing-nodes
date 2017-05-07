@@ -3,10 +3,11 @@
    Vendor scss 
    **note: always keep vendor scss on top inorder to override those styles in application custom styles
 */
-@import 'vendors/module';
+@import 'bootstrap';
 
 /* Generic application scss */
-@import 'component/module';
+@import 'base';
+@import 'header';
 
 /* Application scss */
 @import 'app/components/about/about';
