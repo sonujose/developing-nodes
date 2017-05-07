@@ -21,5 +21,4 @@ appModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
             controller: 'AboutController',
             url: '/about'
         });
-    $locationProvider.html5Mode(true);
 }]);
