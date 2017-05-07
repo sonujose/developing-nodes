@@ -19,7 +19,6 @@ appModule.config(['$stateProvider', '$urlRouterProvider','$locationProvider', fu
             controller: 'AboutController',
             url: '/about'
         });
-    
-    $urlRouterProvider.otherwise('/');
-    //$locationProvider.html5Mode(true);
+        
+        $urlRouterProvider.otherwise('/');
 }]);
