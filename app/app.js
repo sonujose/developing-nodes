@@ -8,6 +8,8 @@ var appModule = angular.module('App', ['App.components', 'App.shared', 'ui.route
 
 appModule.config(['$stateProvider', '$urlRouterProvider','$locationProvider', function($stateProvider, $urlRouterProvider,$locationProvider) {
 
+    $urlRouterProvider.otherwise('/');
+    
     $stateProvider
         .state('home', {
             templateUrl: 'app/components/home/home.html',
@@ -19,6 +21,4 @@ appModule.config(['$stateProvider', '$urlRouterProvider','$locationProvider', fu
             controller: 'AboutController',
             url: '/about'
         });
-        
-        $urlRouterProvider.otherwise('/');
 }]);
