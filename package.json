@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "DN-Algos",
   "scripts": {
-    "start": "node server/server.js",
-    "test": "webpack --watch"
+    "start": "webpack -w & node server/server.js",
+    "test": "webpack"
   },
   "author": "sonujose",
   "license": "MIT",
